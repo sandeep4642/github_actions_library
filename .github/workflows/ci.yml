@@ -43,7 +43,7 @@ jobs:
         id: app_name
         uses: notiz-dev/github-action-json-property@release
         with: 
-          path: '{{ env.ACTIONFILE }}'
+          path: ${{ env.ACTIONFILE }}
           prop_path: 'application_properties.APPNAME'
 
       - name: Set up Docker Buildx
