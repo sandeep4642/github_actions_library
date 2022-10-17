@@ -4,7 +4,6 @@ on:
   workflow_call:
     inputs:
       javaVersion:
-        default: "11"
         required: true
         type: number  
 jobs:
