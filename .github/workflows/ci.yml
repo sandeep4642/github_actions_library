@@ -6,9 +6,9 @@ on:
       javaVersion:
         required: true
         type: number
-    ACTIONFILE:
-      required: true
-      type: string
+      ACTIONFILE:
+        required: true
+        type: string
     
     secrets:
       Dockerhub_username:
