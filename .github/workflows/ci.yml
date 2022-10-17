@@ -6,6 +6,9 @@ on:
       javaVersion:
         required: true
         type: number
+    ACTIONFILE:
+      required: true
+      type: string
     
     secrets:
       Dockerhub_username:
@@ -14,7 +17,7 @@ on:
         required: true
 
 env:
-  ACTIONFILE: "${{ inputs.ActionFile }}"
+  ACTIONFILE: ${{ inputs.ActionFile }}
 
 jobs:
   CI_Build:
