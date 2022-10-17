@@ -15,6 +15,6 @@ jobs:
   
   steps:
     - name: Extract Branch Name
-        shell: bash  
-        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-        id: extract_branch
+      shell: bash  
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      id: extract_branch
