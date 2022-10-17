@@ -13,8 +13,8 @@ on:
       Dockerhub_token:
         required: true
 
-    env:
-      ACTIONFILE: ${{ inputs.ACTIONFILE }}
+env:
+  ACTIONFILE: ${{ inputs.ACTIONFILE }}
 
 jobs:
   CI_Build:
