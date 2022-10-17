@@ -6,11 +6,6 @@ on:
       javaVersion:
         required: true
         type: number
-    secrets:
-      Dockerhub_username:
-        required: true
-      Dockerhub_password:
-        required: true  
 jobs:
   CI_Build:
     runs-on: ubuntu-latest
