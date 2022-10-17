@@ -5,7 +5,12 @@ on:
     inputs:
       javaVersion:
         required: true
-        type: number  
+        type: number
+    secrets:
+      Dockerhub_username:
+        required: true
+      Dockerhub_password:
+        required: true  
 jobs:
   CI_Build:
     runs-on: ubuntu-latest
