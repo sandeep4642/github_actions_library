@@ -14,7 +14,7 @@ on:
         required: true
 
 env:
-  ACTIONFILE: ${{ inputs.ACTIONFILE }}
+  ACTIONFILE: Actionfile/dev
 
 jobs:
   CI_Build:
